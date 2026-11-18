@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Escola Digital Belo: aprenda estratégias de vendas online, marketing de afiliados e criação de conteúdo.">
+  <meta name="theme-color" content="#071326">
+  <title>Escola Digital Belo | Do Zero a R$ 1.000 por Semana</title>
+  <style>
+    :root{--bg:#06101f;--panel:#0d1c32;--panel2:#102541;--blue:#168cff;--gold:#f5c542;--text:#f6f8fc;--muted:#b9c7d9;--line:#24415f}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none} .wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(5,14,28,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{font-weight:900;letter-spacing:.3px;font-size:1.12rem}.brand span{color:var(--blue)}
+    nav{display:flex;gap:22px;align-items:center;color:var(--muted);font-size:.94rem}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;background:linear-gradient(135deg,#ffd95c,#f2a900);color:#101522;font-weight:900;padding:13px 20px;border-radius:999px;border:0;cursor:pointer;box-shadow:0 8px 28px #f5b90025}
+    .btn:hover{filter:brightness(1.06);transform:translateY(-1px)} .btn.blue{background:linear-gradient(135deg,#35a6ff,#0873e6);color:white}
+    .hero{padding:34px 0 58px;background:radial-gradient(ellipse at 75% 25%,#073d79 0,transparent 42%),linear-gradient(180deg,#08182d,#06101f)}
+    .hero-img{display:block;width:100%;height:auto;border-radius:20px;border:1px solid #25517c;box-shadow:0 22px 70px #0008}
+    .hero-note{text-align:center;color:var(--muted);font-size:.9rem;margin-top:12px}
+    section{padding:66px 0}.eyebrow{color:var(--gold);font-weight:900;text-transform:uppercase;letter-spacing:1.6px;font-size:.78rem}
+    h1,h2,h3,p{margin-top:0}h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.15;margin-bottom:14px}h3{line-height:1.25}
+    .lead{color:var(--muted);max-width:760px;font-size:1.08rem}
+    .center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .card{background:linear-gradient(155deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:22px}
+    .card p{color:var(--muted);margin-bottom:0}.icon{font-size:1.65rem;margin-bottom:10px}
+    .platforms{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:26px}
+    .pill{padding:11px 17px;border:1px solid #2c5c89;background:#0b2038;border-radius:999px;font-weight:800}
+    .course{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+    .module{border:1px solid var(--line);border-radius:14px;background:#0b1b30;margin:10px 0;overflow:hidden}
+    .module button{width:100%;background:transparent;color:var(--text);border:0;padding:17px 18px;text-align:left;display:flex;justify-content:space-between;gap:12px;font-weight:800;font-size:1rem;cursor:pointer}
+    .module-content{display:none;padding:0 18px 17px;color:var(--muted)}.module.open .module-content{display:block}
+    .module-content ul{margin:0;padding-left:20px}
+    .teacher{display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:center;background:linear-gradient(135deg,#102947,#0b192c);border:1px solid var(--line);padding:25px;border-radius:22px}
+    .teacher img{width:100%;max-height:330px;object-fit:cover;object-position:center 25%;border-radius:16px}
+    .notice{border-left:4px solid var(--gold);padding:13px 16px;background:#171f2a;color:#d7dfeb;border-radius:8px;font-size:.9rem}
+    .cta{background:radial-gradient(ellipse at 50% 0,#104c88,transparent 65%),#0b1b30;border:1px solid #24517d;border-radius:24px;padding:38px 24px;text-align:center}
+    footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+    .modal{position:fixed;inset:0;background:#000b;display:none;place-items:center;padding:18px;z-index:30}.modal.show{display:grid}
+    .modal-box{width:min(480px,100%);background:#10223a;border:1px solid #37618b;border-radius:20px;padding:26px;position:relative}
+    .modal-box label{display:block;margin:12px 0 5px;color:#dce7f5}.modal-box input{width:100%;padding:13px;border-radius:10px;border:1px solid #42617f;background:#071326;color:white}
+    .close{position:absolute;right:14px;top:10px;background:none;border:0;color:white;font-size:1.7rem;cursor:pointer}
+    @media(max-width:760px){nav{display:none}.grid{grid-template-columns:1fr}.course{grid-template-columns:1fr}.teacher{grid-template-columns:1fr}.teacher img{max-width:260px;margin:auto}.hero{padding-top:18px}section{padding:48px 0}.nav{min-height:64px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio">ESCOLA DIGITAL <span>BELO</span></a>
+    <nav><a href="#curso">O curso</a><a href="#plataformas">Plataformas</a><a href="#professor">Professor</a><a href="#duvidas">Dúvidas</a></nav>
+    <button class="btn" data-open>Conhecer o curso</button>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <img class="hero-img" src="assets/banner-escola-digital-belo.png" alt="Banner Escola Digital Belo — Do Zero a R$ 1.000 por Semana">
+      <p class="hero-note">Treinamento online para aprender estratégias de vendas e divulgação pela internet.</p>
+    </div>
+  </section>
+
+  <section id="curso">
+    <div class="wrap center">
+      <div class="eyebrow">Primeiro treinamento oficial</div>
+      <h2>DO ZERO A R$ 1.000 POR SEMANA</h2>
+      <p class="lead">Aprenda a dar os primeiros passos no comércio digital, conhecer plataformas de vendas, divulgar produtos e acompanhar seus resultados — mesmo começando com pouca experiência.</p>
+      <div class="grid">
+        <article class="card"><div class="icon">📱</div><h3>Comece pelo celular</h3><p>Conheça ferramentas e formas de organizar seu trabalho usando o smartphone.</p></article>
+        <article class="card"><div class="icon">🎬</div><h3>Crie conteúdo</h3><p>Aprenda a planejar vídeos, imagens e textos para apresentar produtos.</p></article>
+        <article class="card"><div class="icon">📊</div><h3>Acompanhe resultados</h3><p>Entenda comissões, custos, conversões e metas realistas para evoluir.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="plataformas" style="background:#09182b">
+    <div class="wrap center">
+      <div class="eyebrow">Onde você vai aprender</div>
+      <h2>Conheça diferentes canais de venda</h2>
+      <p class="lead">O curso apresenta conceitos e estratégias para trabalhar conforme as regras e os requisitos de cada plataforma.</p>
+      <div class="platforms">
+        <span class="pill">TikTok Shop</span><span class="pill">Shopee</span><span class="pill">Mercado Livre</span><span class="pill">Amazon Afiliados</span><span class="pill">Instagram</span><span class="pill">Facebook</span><span class="pill">YouTube</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap course">
+      <div>
+        <div class="eyebrow">Conteúdo organizado</div>
+        <h2>O que você vai aprender</h2>
+        <p class="lead">Abra cada módulo para conhecer os principais assuntos previstos no treinamento.</p>
+        <div class="module open"><button aria-expanded="true">Módulo 1 — Começando do zero <span>＋</span></button><div class="module-content"><ul><li>Como funciona o comércio digital</li><li>Escolha de nicho e planejamento</li><li>Organização usando o celular</li></ul></div></div>
+        <div class="module"><button aria-expanded="false">Módulo 2 — TikTok Shop <span>＋</span></button><div class="module-content"><ul><li>Requisitos e configuração da conta</li><li>Produtos, vídeos e divulgação</li><li>Comissões e acompanhamento</li></ul></div></div>
+        <div class="module"><button aria-expanded="false">Módulo 3 — Shopee <span>＋</span></button><div class="module-content"><ul><li>Programa de afiliados e regras</li><li>Pesquisa de produtos</li><li>Links, conteúdo e divulgação</li></ul></div></div>
+        <div class="module"><button aria-expanded="false">Módulo 4 — Mercado Livre <span>＋</span></button><div class="module-content"><ul><li>Como funciona o marketplace</li><li>Cadastro, anúncios e operação de vendas</li><li>Custos, reputação e atendimento</li></ul></div></div>
+        <div class="module"><button aria-expanded="false">Módulo 5 — Amazon e outros canais <span>＋</span></button><div class="module-content"><ul><li>Afiliados e divulgação</li><li>Redes sociais e tráfego orgânico</li><li>Cuidados com links e publicidade</li></ul></div></div>
+        <div class="module"><button aria-expanded="false">Módulo 6 — Conteúdo com inteligência artificial <span>＋</span></button><div class="module-content"><ul><li>Roteiros, imagens e vídeos</li><li>Apresentadores virtuais</li><li>Boas práticas e revisão do conteúdo</li></ul></div></div>
+        <div class="module"><button aria-expanded="false">Módulo 7 — Operação e vendas <span>＋</span></button><div class="module-content"><ul><li>Afiliados, estoque e fornecedores</li><li>Entrega, atendimento e pós-venda</li><li>Políticas de cada plataforma</li></ul></div></div>
+        <div class="module"><button aria-expanded="false">Módulo 8 — Plano de ação de 30 dias <span>＋</span></button><div class="module-content"><ul><li>Metas e rotina de divulgação</li><li>Cálculo de lucro e comissões</li><li>Análise de resultados e melhorias</li></ul></div></div>
+      </div>
+      <aside class="card">
+        <div class="icon">🎓</div><h3>Aprenda passo a passo</h3>
+        <p>O treinamento foi pensado para iniciantes. O acesso às aulas, materiais, suporte e certificado dependerá da configuração final da plataforma.</p>
+        <p style="margin-top:18px"><button class="btn blue" data-open>Tenho interesse</button></p>
+        <div class="notice" style="margin-top:18px">A meta de R$ 1.000 por semana é um objetivo de referência, não uma promessa de ganhos. Os resultados variam conforme dedicação, estratégia, mercado e condições de cada plataforma.</div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="professor" style="background:#09182b">
+    <div class="wrap">
+      <div class="teacher">
+        <img src="assets/professor-referencia.png" alt="Fotografia de referência do professor da Escola Digital Belo">
+        <div><div class="eyebrow">Conheça o apresentador</div><h2>Aprenda com a Escola Digital Belo</h2><p class="lead">Este espaço apresenta o professor e a proposta do treinamento. As aulas devem trazer demonstrações práticas, explicações claras e atividades para aplicar o conteúdo.</p><p>Nosso objetivo é ajudar você a entender o comércio online e desenvolver habilidades para divulgar produtos e construir sua própria estratégia digital.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="duvidas">
+    <div class="wrap center">
+      <div class="eyebrow">Antes de começar</div><h2>Perguntas frequentes</h2>
+      <div class="grid" style="text-align:left">
+        <article class="card"><h3>Preciso ter experiência?</h3><p>Não. O conteúdo foi planejado para apresentar os conceitos desde o início.</p></article>
+        <article class="card"><h3>Posso estudar pelo celular?</h3><p>Sim. Esta página é responsiva e o curso pode ser organizado para acesso por celular, tablet e computador.</p></article>
+        <article class="card"><h3>Vou ganhar R$ 1.000 por semana?</h3><p>Não há garantia de renda. O valor é uma meta de referência; resultados dependem de vários fatores.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap"><div class="cta"><div class="eyebrow">Dê o primeiro passo</div><h2>Comece a aprender sobre vendas online</h2><p class="lead" style="margin:0 auto 22px">Conheça a proposta do treinamento da Escola Digital Belo.</p><button class="btn" data-open>QUERO CONHECER O CURSO</button></div></div>
+  </section>
+</main>
+
+<footer><div class="wrap">© <span id="year"></span> Escola Digital Belo. Todos os direitos reservados.<br><small>Este site é uma apresentação inicial. Preços, pagamentos, login, aulas hospedadas e suporte precisam ser configurados antes da venda do curso. TikTok, Shopee, Mercado Livre e Amazon são marcas de seus respectivos proprietários; a Escola Digital Belo não afirma parceria ou vínculo oficial.</small></div></footer>
+
+<div class="modal" id="interestModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box">
+    <button class="close" aria-label="Fechar" id="closeModal">×</button>
+    <div class="eyebrow">Escola Digital Belo</div><h2 id="modalTitle">Receba informações do curso</h2>
+    <p style="color:var(--muted)">Preencha seus dados. Este formulário é demonstrativo e ainda não envia informações para um servidor.</p>
+    <form id="interestForm">
+      <label for="name">Seu nome</label><input id="name" name="name" required placeholder="Digite seu nome">
+      <label for="email">Seu e-mail</label><input id="email" name="email" type="email" required placeholder="voce@email.com">
+      <button class="btn" style="width:100%;margin-top:18px" type="submit">Enviar interesse</button>
+    </form>
+    <p id="formMessage" role="status" style="margin:12px 0 0;color:#f5d36b"></p>
+  </div>
+</div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.querySelectorAll('.module button').forEach(button => {
+    button.addEventListener('click', () => {
+      const item = button.parentElement;
+      item.classList.toggle('open');
+      button.setAttribute('aria-expanded', item.classList.contains('open') ? 'true' : 'false');
+    });
+  });
+  const modal = document.getElementById('interestModal');
+  document.querySelectorAll('[data-open]').forEach(button => button.addEventListener('click', () => modal.classList.add('show')));
+  document.getElementById('closeModal').addEventListener('click', () => modal.classList.remove('show'));
+  modal.addEventListener('click', event => { if(event.target === modal) modal.classList.remove('show'); });
+  document.getElementById('interestForm').addEventListener('submit', event => {
+    event.preventDefault();
+    document.getElementById('formMessage').textContent = 'Demonstração concluída. Para receber cadastros reais, conecte este formulário a um serviço de backend.';
+    event.target.reset();
+  });
+</script>
+</body>
+</html>
